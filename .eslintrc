@@ -1,9 +1,0 @@
-{
-  "extends": ["wesbos"],
-  "rules": {
-    "prettier/prettier": "error",
-    "no-unused-vars": ["error"],
-    "import/no-dynamic-require": "off",
-    "global-require": "off"
-  }
-}
