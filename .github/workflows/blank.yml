@@ -1,11 +1,13 @@
 name: manual trigger speficy value and user
+env:
+  testvar: 1234
 on:
   workflow_dispatch:
     inputs:
       value:
         description: 'check the value'
         required: true
-        default: '${{ secrets.testvar1 }}'
+        default: '${{ env.testvar }}'
 
 
 jobs:
