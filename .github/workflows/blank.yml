@@ -4,7 +4,9 @@ on:
     inputs:
       value:
         description: 'check the value'
-   #     required: true
+        required: true
+        default: '${{ secrets.testvar1 }}'
+
 
 jobs:
   job1:
